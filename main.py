@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 
 # Set API keys
-OPENTYPHOON_API_KEY = ("OPENTYPHOON_API_TOKEN")
+OPENTYPHOON_API_KEY = ("OPENTYPHOON_API_KEY")
 DISCORD_BOT_TOKEN = ("DISCORD_BOT_TOKEN")
 print("OpenTyphoon API Key:", OPENTYPHOON_API_KEY)
 print("Discord Bot Token:", DISCORD_BOT_TOKEN)
@@ -143,6 +143,8 @@ def run_local_chatbot():
         if user_input.lower() == "exit()":
             print("Goodbye!")
             break
+        elif user_input.lower() == "restart()":
+            run_local_chatbot()
         elif not user_input:
             print("Please enter a valid input.")
             continue
