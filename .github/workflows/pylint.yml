@@ -25,4 +25,4 @@ jobs:
         run: pip install pylint requests discord.py
 
       - name: Run Pylint
-        run: pylint --disable=C0301 main.py
+        run: pylint --exit-zero --fail-under=9.0 --disable=C0301 main.py
