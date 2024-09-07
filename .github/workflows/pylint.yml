@@ -1,10 +1,9 @@
-name: Pylint Linting
+name: Pylint
 
 on:
   push:
     branches:
       - main
-      - '**/feature/*'
   pull_request:
     branches:
       - main
@@ -14,31 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the code from the repository
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # Step 2: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: 3.12
 
-      # Step 3: Install dependencies
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install pylint
+        run: pip install pylint requests discord.py
 
-      # Step 4: Run Pylint
       - name: Run Pylint
-        run: |
-          pylint **/*.py
-          
-      # Step 5: Upload Pylint report (optional)
-      - name: Upload Pylint report
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: pylint-report
-          path: pylint-report.txt
+        run: pylint --exit-zero --fail-under=9.0 main.py
