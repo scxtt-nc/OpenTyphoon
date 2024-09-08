@@ -4,7 +4,7 @@ This project is a AI chatbot that can be run either as a **Discord bot** or loca
 
 ## Function Used
 
-| Function                            | Present in Script          |
+| Function                            | Present in Script           |
 |-------------------------------------|-----------------------------|
 | **Input**                           | :white_check_mark:          |
 | **Output**                          | :white_check_mark:          |
@@ -14,7 +14,7 @@ This project is a AI chatbot that can be run either as a **Discord bot** or loca
 | **Function**                        | :white_check_mark:          |
 | **Container**                       | :white_check_mark:          |
 | **String Operation**                | :white_check_mark:          |
-| **File Handling**                   | :x:                         |
+| **File Handling**                   | :white_check_mark:          |
 | **Python Standard Library Modules** | :white_check_mark:          |
 
 ## How to Use
@@ -23,7 +23,7 @@ This project is a AI chatbot that can be run either as a **Discord bot** or loca
 1. Clone this repository.
 2. Install the required dependencies:
    ```bash
-   pip install requests discord.py
+   pip install -r requirements.txt
    ```
 3. Set up your **OpenTyphoon API Key** and add it to the script.
 4. Run the script and select option **2** to run the bot locally:
@@ -37,7 +37,7 @@ This project is a AI chatbot that can be run either as a **Discord bot** or loca
 1. Clone this repository.
 2. Install the required dependencies:
    ```bash
-   pip install requests discord.py
+   pip install -r requirements.txt
    ```
 3. Set up your **OpenTyphoon API Key and Discord Bot Token** and add it to the script.
 4. Run the script and select option **1**:
