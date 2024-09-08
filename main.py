@@ -3,14 +3,13 @@ import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
-
+# Load API keys from .env file
 load_dotenv()
 
-token = os.environ['TOKEN']
+# Get API keys from environment variables
+OPENTYPHOON_API_KEY = os.getenv("OPENTYPHOON_API_KEY")
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
-# Set API keys
-OPENTYPHOON_API_KEY = os.environ['OPENTYPHOON_API_KEY']
-DISCORD_BOT_TOKEN = os.environ['TOKEN']
 print("OpenTyphoon API Key:", OPENTYPHOON_API_KEY)
 print("Discord Bot Token:", DISCORD_BOT_TOKEN)
 
