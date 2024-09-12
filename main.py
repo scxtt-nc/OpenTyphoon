@@ -136,6 +136,9 @@ def run_discord_bot():
     # Command: Chat with the bot
     @bot.command(name='chat')
     async def chat(ctx, *, user_input: str):
+        """
+        Handle the chat command by sending the user input to the OpenTyphoon API and returning the response.
+        """
         try:
             response = get_opentyphoon_response(user_input)
             await ctx.send(response)
@@ -184,6 +187,9 @@ def run_local_chatbot():
 
 # Main function to choose between Discord bot or local chatbot
 def main():
+    """
+    Main function to choose between running the chatbot as a Discord bot or locally in the console.
+    """
     print("Choose the mode:")
     print("1. Run as Discord bot")
     print("2. Run locally in the console")
