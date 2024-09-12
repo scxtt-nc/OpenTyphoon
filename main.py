@@ -129,11 +129,9 @@ def run_discord_bot():
 
     # Event: Bot is ready
     @bot.event
+    @bot.event
     async def on_ready():
         print(f'{bot.user} has connected to Discord!')
-
-    # Register the event
-    bot.event(on_ready)
 
     # Command: Chat with the bot
     @bot.command(name='chat')
@@ -178,8 +176,8 @@ def run_local_chatbot():
         elif not user_input:
             logger.warning("Empty input received.")
             print("Please enter a valid input.")
-        logger.info("User: %s", user_input)
-        logger.info("Bot: %s", response)onse(user_input)
+            continue
+        response = get_opentyphoon_response(user_input)
         logger.info(f"User: {user_input}")
         logger.info(f"Bot: {response}")
         print(f"Bot: {response}")
