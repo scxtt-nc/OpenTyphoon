@@ -131,9 +131,6 @@ def run_discord_bot():
     @bot.event
     @bot.event
     async def on_ready():
-        """
-        Event handler for when the bot is ready.
-        """
         print(f'{bot.user} has connected to Discord!')
 
     # Command: Chat with the bot
