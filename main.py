@@ -114,7 +114,7 @@ def get_opentyphoon_response(user_input):
         ]
     }
 
-    response = requests.post(API_URL, headers=headers, json=data)
+    response = requests.post(API_URL, headers=headers, json=data, timeout=120)
 
     if response.status_code == 200:
         return response.json()['choices'][0]['message']['content']
