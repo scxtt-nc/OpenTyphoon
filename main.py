@@ -130,7 +130,6 @@ def run_discord_bot():
     # Event: Bot is ready
     @bot.event
     async def on_ready():
-        """Event handler for when the bot has connected to Discord."""
         print(f'{bot.user} has connected to Discord!')
 
     # Register the event
@@ -139,7 +138,6 @@ def run_discord_bot():
     # Command: Chat with the bot
     @bot.command(name='chat')
     async def chat(ctx, *, user_input: str):
-        """Command to chat with the bot."""
         try:
             response = get_opentyphoon_response(user_input)
             await ctx.send(response)
