@@ -18,7 +18,7 @@ print("Discord Bot Token:", DISCORD_BOT_TOKEN)
 API_URL = "https://api.opentyphoon.ai/v1/chat/completions"
 
 # Default system prompt
-system_prompt = "You are a helpful assistant."
+system_prompt = "You are a helpful assistant named Typhoon."
 
 # Function to detect keyword, modify system prompt, and remove the keyword from user_input
 def modify_system_prompt_and_clean_input(user_input):
