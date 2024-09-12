@@ -1,3 +1,8 @@
+"""
+This module contains the implementation of a chatbot that can run as a Discord bot or locally in the console.
+It uses the OpenTyphoon API to generate responses based on user input.
+"""
+
 import requests
 import discord
 from discord.ext import commands
