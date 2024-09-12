@@ -3,11 +3,11 @@ This module contains the implementation of a chatbot that can run as a Discord b
 It uses the OpenTyphoon API to generate responses based on user input.
 """
 
+import os
+import logging
 import requests
 import discord
 from discord.ext import commands
-import logging
-import os
 from dotenv import load_dotenv
 # Load API keys from .env file
 load_dotenv()
