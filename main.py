@@ -143,8 +143,13 @@ def run_discord_bot():
         try:
             response = get_opentyphoon_response(user_input)
             await ctx.send(response)
+            print(f"User: {user_input}")
+            logger.info(f"User: {user_input}")
+            print(f"Bot: {response}")
+            logger.info(f"Bot: {response}")
         except Exception as e:
             await ctx.send(f"Error: {e}")
+            logger.error(f"Error: {e}")
 
     # Run the bot
     bot.run(DISCORD_BOT_TOKEN)
