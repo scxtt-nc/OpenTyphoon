@@ -16,8 +16,8 @@ load_dotenv()
 OPENTYPHOON_API_KEY = os.getenv("OPENTYPHOON_API_KEY")
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 
-print("OpenTyphoon API Key:", OPENTYPHOON_API_KEY)
-print("Discord Bot Token:", DISCORD_BOT_TOKEN)
+# print("OpenTyphoon API Key:", OPENTYPHOON_API_KEY)
+# print("Discord Bot Token:", DISCORD_BOT_TOKEN)
 
 # Base API URL
 API_URL = "https://api.opentyphoon.ai/v1/chat/completions"
@@ -94,6 +94,8 @@ def modify_system_prompt_and_clean_input(user_input):
             system_prompt = prompt
             # Remove the keyword from user_input
             user_input = user_input.lower().replace(keyword, "").strip()
+        else:
+            system_prompt = "You are a helpful assistant named Typhoon." 
 
     return user_input
 
