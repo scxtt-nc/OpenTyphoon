@@ -69,6 +69,11 @@ This chatbot integrates with the **OpenTyphoon API** to provide intelligent resp
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+```
+This `README.md` includes the project description, features, usage instructions for both local and Discord bot options, API integration details, and commands. Feel free to adjust it based on your specific requirements!
 ```
 
-This `README.md` includes the project description, features, usage instructions for both local and Discord bot options, API integration details, and commands. Feel free to adjust it based on your specific requirements!
+### Special Thanks
+
+This project utilizes system prompts inspired by the [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) repository. Special thanks to the contributors of this repository for their valuable work in curating these prompts.
