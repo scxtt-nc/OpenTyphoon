@@ -74,4 +74,4 @@ This project is licensed under the GNU General Public License v3.0 License. See 
 
 This repository includes a system prompts inspired by the [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) repository. Special thanks to the contributors of this repository for their valuable work in curating these prompts.
 
-See [`LICENSE.CC0v1`](./LICENSE.CC0v1) for the full license text of the system prompts file.
+See [LICENSE.CC0v1](./LICENSE.CC0v1) for the full license text of the system prompts file.
